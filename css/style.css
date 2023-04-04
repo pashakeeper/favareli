@@ -76,6 +76,10 @@ a {
 	width: 100%;
 }
 
+.logged-in .header {
+	top: 32px;
+}
+
 .header .row {
 	align-items: center;
 }
@@ -992,7 +996,7 @@ a {
 
 .form_box span {
 	position: absolute;
-	bottom: 10px;
+	bottom: -10px;
 	pointer-events: none;
 	transition: all .5s ease;
 }
@@ -1002,7 +1006,7 @@ a {
 }
 
 .form_control.active span {
-	bottom: 30px;
+	bottom: 10px;
 	font-size: .9rem;
 }
 
@@ -1010,6 +1014,15 @@ a {
 	height: 31px;
 	margin-bottom: 40px;
 	position: relative;
+}
+
+.form_box select {
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-bottom: 1px solid var(--black);
+	outline: 0;
+	margin-top: 10px;
 }
 
 input[type="submit"] {
@@ -1576,6 +1589,15 @@ input[type="submit"]:hover {
 	width: 100%;
 }
 
+.register_form_box form input:autofill,
+.register_form_box form input:-webkit-autofill {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid var(--white);
+	background: transparent;
+	width: 100%;
+}
+
 .register_form_box form input[type="submit"] {
 	max-width: 215px;
 	height: 47px;
@@ -1595,6 +1617,11 @@ input[type="submit"]:hover {
 
 .register_form_box .form_control {
 	position: relative;
+}
+
+.register_form_box h1 {
+	text-align: center;
+	color: var(--white);
 }
 
 .forgot {
@@ -1641,7 +1668,7 @@ input[type="submit"]:hover {
 	padding-bottom: 791px;
 	background: url('../img/event-bg-1.png'), url('../img/evennt-circle1.png'), url('../img/event-bg-girls.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% auto, auto auto, 100% auto;
+	background-size: 100% 100%, auto auto, 100% 100%;
 	background-position: center top, calc(100% - 180px) 93px, top left;
 	position: relative;
 
@@ -1697,10 +1724,10 @@ input[type="submit"]:hover {
 
 .event_page_section__2 {
 	padding-bottom: 100px;
-	background: url('../img/event-bg-2.png'), url('../img/event-bg-girls2.jpg');
-	background-size: 100% auto, 100% auto;
+	background: url('../img/event-bg-2.png'), url('../img/event-gradient-circle.png'), url('../img/event-bg-girls2.jpg');
+	background-size: 100% 80%, auto, cover;
 	background-repeat: no-repeat;
-	background-position: center top, center bottom;
+	background-position: center top, 100% 1320px, center 630px;
 	padding-bottom: 600px;
 
 }
@@ -1712,13 +1739,22 @@ input[type="submit"]:hover {
 	width: 100%;
 }
 
+.event_left_girl {
+	max-width: 783px;
+	width: 100%;
+}
+
+.event_page_section__2 .col-lg-6 {
+	padding-right: 0;
+}
+
 .event_page_section__2 h2 {
 	font-weight: 700;
 	font-size: 30px;
 	color: var(--white);
 	text-align: center;
 	margin-bottom: 10px;
-	margin-top: -250px;
+	margin-top: -130px;
 }
 
 .event_page_section__2 p {
@@ -1785,6 +1821,8 @@ input[type="submit"]:hover {
 	font-size: 17px;
 	line-height: 21px;
 	margin-bottom: 55px;
+	color: var(--black);
+	text-align: left;
 }
 
 .list_box ul li {
@@ -1848,7 +1886,7 @@ input[type="submit"]:hover {
 	margin-top: 130px;
 	max-width: 1094px;
 	width: 100%;
-	margin-left: 276px;
+	margin-left: 39px;
 	background: rgba(241, 144, 170, 0.7);
 	padding: 50px 95px;
 	position: relative;
@@ -1891,10 +1929,12 @@ input[type="submit"]:hover {
 	padding-bottom: 91px;
 	position: relative;
 }
-.event_page_section__5 .col-lg-4.pl-0 img{
+
+.event_page_section__5 .col-lg-4.pl-0 img {
 	max-width: 438px;
 	width: 100%;
 }
+
 .may_circle_1 {
 	width: 40px;
 	height: 40px;
@@ -2213,6 +2253,11 @@ input[type="submit"]:hover {
 	margin-right: auto;
 }
 
+.galery__box .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 .galery__box img {
 	margin-left: -47px;
 	margin-top: -47px;
@@ -2365,7 +2410,7 @@ input[type="submit"]:hover {
 	background: url('../img/course/morph-bg.png');
 	background-repeat: no-repeat;
 	background-position: left top;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 
 .course_circle_side {
@@ -2713,12 +2758,112 @@ input[type="submit"]:hover {
 	margin-top: 76px;
 }
 
+.page_404 {
+	padding-top: 250px;
+	padding-bottom: 250px;
+	text-align: center;
+	font-size: 30px;
+}
 
+.cookies_modal {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background: url('../img/cookies-bg.png');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 90% 100%;
+	transition: all .5s ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.cookies_modal.active {
+	top: 0;
+	opacity: 1;
+	visibility: visible;
+}
+
+.cookies_modal h2 {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 21px;
+	margin-top: calc(80px + 107px);
+	margin-bottom: 70px;
+}
+
+.cookies_modal p {
+	font-weight: 400;
+	font-size: 17px;
+	margin-bottom: 40px;
+	max-width: 471px;
+}
+
+.cookies_modal .btn {
+	position: absolute;
+	width: 155px;
+	height: 155px;
+	border-radius: 50%;
+	right: 0;
+}
+
+#cookies_overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(112, 123, 184, 0.8);
+	transition: all .5s ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#cookies_overlay.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.cookies_open {
+	overflow: hidden;
+}
 
 /* Media */
+
+@media (max-width: 1769px) {
+	.event_page_section__1 {
+		background-size: 100% 100%, auto auto, cover;
+	}
+
+	.rules_box {
+		margin-top: 110px;
+	}
+
+	.list_box {
+		margin-left: 50px;
+	}
+
+	.event_page_section__4 {
+		background-size: 270% 950px, 100% 100%;
+	}
+}
+
 @media screen and (max-width: 1368px) {
+
 	.contact__icons {
 		padding: 0 0 40px;
+	}
+
+	.cookies_modal {
+		background-size: 110% 100%;
+	}
+
+	.event_page_section__4 {
+		background-size: 270% 1060px, 100% 100%;
 	}
 }
 
@@ -2751,6 +2896,9 @@ input[type="submit"]:hover {
 		left: 0;
 	}
 
+	.phones a {
+		white-space: nowrap;
+	}
 }
 
 @media (max-width: 1199px) {
@@ -2760,28 +2908,65 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 991px) {
+	.cookies_modal h2 {
+		margin-top: 300px;
+	}
+	.cookies_modal {
+		background-size: 150% 150%;
+	}
+	.event_page_section__1 {
+		background-size: cover, auto auto, cover;
+	}
+
+	.list_box {
+		margin-left: 0;
+		max-width: 50%;
+	}
+
+	.event_page_section__2 {
+		background-size: cover, auto, cover;
+	}
+
+	.rules_box {
+		margin-left: 0;
+	}
+
+	.event_page_section__4 {
+		background-size: cover, 100% 100%;
+	}
+
+	.event_page_section__5 .may {
+		margin-top: 0;
+	}
+
 	.course_section_3 .price_box {
 		margin-top: 30px;
 		padding: 90px 135px;
 	}
-	.manikin_1,.manikin_2 {
+
+	.manikin_1,
+	.manikin_2 {
 		display: none;
 	}
-	.course_section_3{
-	    background: url(../img/course/head-bg-white.png), var(--yellow);
+
+	.course_section_3 {
+		background: url(../img/course/head-bg-white.png), var(--yellow);
 		background-repeat: no-repeat;
 		background-size: 100%;
 	}
+
 	.teacher_box {
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 40px;
 	}
+
 	.fourth_row .col-lg-4.pr-0 img {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 40px;
 	}
+
 	.course_program__list_box {
 		margin-left: auto;
 		margin-right: auto;
@@ -3007,6 +3192,11 @@ input[type="submit"]:hover {
 }
 
 @media (max-width:768px) {
+
+	.event_page_section__2 .container {
+		max-width: 100%;
+	}
+
 	main {
 		overflow-x: hidden;
 	}
@@ -3068,4 +3258,60 @@ input[type="submit"]:hover {
 	.about_us_section__1 h1 {
 		font-size: 80px;
 	}
+}
+
+.scroll_top {
+	position: fixed;
+	bottom: -100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .6s ease;
+	color: var(--white);
+	background: var(--pink);
+	transition: all .5s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	box-shadow: 0 0 5px #000;
+}
+
+.scroll_top.active {
+	bottom: 20px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.menu-item-has-children {
+	position: relative;
+}
+
+.menu-item-has-children .sub-menu {
+	position: absolute;
+	left: 0;
+	background: rgba(255, 255, 255, 0.75);
+	padding: 30px;
+	top: 48px;
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+	transition: all .6s ease;
+	width: max-content;
+}
+
+.menu-item-has-children:hover .sub-menu {
+	opacity: 1;
+	visibility: visible;
+	height: auto;
+}
+
+.menu-item-has-children .sub-menu li {
+	margin-bottom: 10px;
+}
+
+.main_menu li.current_page_item a {
+	font-weight: bold;
 }

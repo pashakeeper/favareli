@@ -52,14 +52,14 @@
 					<div class="col-lg-12">
 						<div class="register_form_box" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="500">
 							<img class="register_logo" src="img/register-logo.png" alt="">
-							<form action="">
+							<form action="" id="register_form" method="POST">
 								<div class="form_control">
 									<div class="placeholder">Login</div>
-									<input type="text">
+									<input type="text" name="txtUsername" autocomplete="off">
 								</div>
 								<div class="form_control">
 									<div class="placeholder">Password</div>
-									<input type="text">
+									<input type="password" name="txtPassword" autocomplete="off">
 								</div>
 								<input type="submit" value="Sign in">
 							</form>
@@ -74,6 +74,22 @@
 
 
 	</main>
+
+	<!-- Cookies -->
+	<div class="cookies_modal">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 ml-auto mr-auto">
+					<h2>Cookies must be enabled in your browser</h2>
+					<p>Two cookies are used on this site:</p>
+					<p>The essential one is the session cookie, usually called MoodleSession. You must allow this cookie in your browser to provide continuity and to remain logged in when browsing the site. When you log out or close the browser, this cookie is destroyed (in your browser and on the server).</p>
+					<p>The other cookie is purely for convenience, usually called MOODLEID or similar. It just remembers your username in the browser. This means that when you return to this site, the username field on the login page is already filled in for you. It is safe to refuse this cookie - you will just have to retype your username each time you log in.</p>
+					<a href="#" class="btn cookies_btn">OK</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="cookies_overlay"></div>
 	<!-- Footer -->
 	<footer class="footer" id="footer">
 		<div class="container">
