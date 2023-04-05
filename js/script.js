@@ -99,7 +99,22 @@ $(function () {
 		$('.title_circle_1').css("transform", "translate(" + posX + "px," + posY + "px)");
 		$('.title_circle_2').css("transform", "translate(" + posX / 2 + "px," + posY / 2 + "px)");
 	});
-
+	$('.shop_section_01').mousemove(function (e) {
+		var posX = e.pageX / 80;
+		var posY = e.pageY / 80;
+		$('.shop_img_01').css("transform", "translate(" + posX + "px," + posY + "px)");
+		$('.shop_img_02').css("transform", "translate(" + posX / 2 + "px," + posY / 2 + "px)");
+		$('.shop_img_03').css("transform", "translate(" + posX + "px," + posY + "px)");
+		$('.shop_img_04').css("transform", "translate(" + posX / 2 + "px," + posY / 2 + "px)");
+		$('.shop_img_05').css("transform", "translate(" + posX + "px," + posY + "px)");
+		$('.shop_img_06').css("transform", "translate(" + posX / 2 + "px," + posY / 2 + "px)");
+	});
+	$('.shop_section_02').mousemove(function (e) {
+		var posX = e.pageX / 80;
+		var posY = e.pageY / 80;
+		$('.shop_elips_01').css("transform", "translate(" + posX + "px," + posY + "px)");
+		$('.shop_elips_02').css("transform", "translate(" + posX / 2 + "px," + posY / 2 + "px)");
+	});
 	$('.card input').mask("9999 9999 9999 9999");
 	$('.expire input').mask("99/99");
 	$('.cvc input').mask("999");
