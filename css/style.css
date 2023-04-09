@@ -3402,6 +3402,9 @@ input[type="submit"]:hover {
 	.shop_section_02 p {
 		margin-bottom: 50px;
 	}
+	.item_info p {
+		margin-bottom: 20px !important;
+	}
 	.arrow {
 		display: none;
 	}
@@ -3417,10 +3420,22 @@ input[type="submit"]:hover {
 		max-width: 30%;
 		width: 100%;
 	}
-	.cookies_modal h2 {
-		margin-top: 300px;
+	.cookies_modal {
+		overflow: auto;
+		padding-bottom: 100px;
 	}
-
+	.cookies_modal h2 {
+		margin-top: 250px;
+		margin-bottom: 30px;
+	}
+	.cookies_modal .btn {
+		height: 47px;
+		width: 215px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 0;
+		position: unset;
+	}
 	.cookies_modal {
 		background-size: 150% 150%;
 	}
