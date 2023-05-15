@@ -3115,6 +3115,7 @@ input[type="submit"]:hover {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+
 .shop_section_02 .shop_row2 .shop_item_box img {
 	max-width: 445px;
 	width: 100%;
@@ -3251,12 +3252,339 @@ input[type="submit"]:hover {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .gift_img {
 	margin-left: 70px;
 	margin-top: -100px;
 	max-width: 240px;
 	width: 100%;
 }
+
+/* Booking page */
+.booking_section {
+	padding-top: 80px;
+	background: url('../img/booking-img.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+}
+
+.booking_section h1 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 37px;
+}
+
+.booking_section h1 span {
+	color: #707BB8;
+}
+
+.booking_section h1 .booking_elips_01 {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 2px solid #707BB8;
+	margin-top: -80px;
+}
+
+.booking_section h1 .booking_elips_02 {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: var(--pink);
+	border-radius: 50%;
+	margin-top: -100px;
+	margin-left: 50px;
+}
+
+.booking_section .col-lg-9 {
+	background: url('../img/booking-img2.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+	margin-top: -90px;
+	padding-top: 160px;
+	padding-bottom: 167px;
+}
+
+.booking_section form {
+	max-width: 540px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+.booking_section .form_control input {
+	border: 0;
+	background: transparent;
+	border-bottom: 2px solid #707BB8;
+	width: 100%;
+	outline: 0;
+}
+
+.booking_section .form_control span {
+	transition: all .5s ease;
+	bottom: 20px;
+	position: absolute;
+	pointer-events: none;
+	font-weight: 300;
+	font-size: 17px;
+	color: #707BB8;
+}
+
+.booking_section .form_control.active span {
+	bottom: 0;
+}
+
+.booking_section .form_control select {
+	border: 0;
+	background: transparent;
+	border-bottom: 2px solid #707BB8;
+	width: 100%;
+	outline: 0;
+	color: #707BB8;
+}
+
+.some_btn {
+	background: #FFFFFF;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 540px;
+	width: 100%;
+	height: 81px;
+}
+
+.booking_section input[type="submit"] {
+	position: unset;
+	width: 200px;
+	height: 50px;
+	border-radius: 19px;
+	background: var(--white);
+	color: #707BB8;
+	font-weight: 400;
+	font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.signature_box {
+	margin-top: 302px;
+	margin-left: auto;
+	margin-right: -100px;
+	max-width: 449px;
+	width: 100%;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url('../img/cloud-book.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.signature_box span {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+	color: var(--white);
+	text-align: center;
+}
+
+.signature_box input {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.signature_box label {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 5px solid #FFFFFF;
+	margin-right: 20px;
+	position: relative;
+}
+
+.signature_box label::before {
+	content: '';
+	width: 45px;
+	height: 45px;
+	background: var(--white);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	transition: all .5s ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.signature_box input:checked+label::before {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Contact Us Page */
+
+.contact_section {
+	padding-top: 160px;
+	background: url('../img/contact-us-bg.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% 135%;
+	position: relative;
+	padding-bottom: 180px;
+}
+
+.contact_section h1 {
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--white);
+	text-align: center;
+	margin-bottom: 120px;
+}
+
+.contact_section h1 img {
+	margin-left: -30px;
+	margin-top: -80px;
+}
+
+.contact_section h1 span {
+	color: var(--yellow);
+}
+
+.contact_frame {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.contact_box {
+	max-width: 255px;
+	width: 100%;
+	height: 184px;
+	border: 5px solid #FFFFFF;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.contact_box h3 {
+	width: 100%;
+	text-align: center;
+}
+
+.contact_box img {
+	margin-left: 10px;
+	margin-top: -40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.box_01 h3,
+.box_02 h3 {
+	font-weight: 700;
+	font-size: 17px;
+	color: var(--black);
+	margin-bottom: 20px;
+}
+
+.box_01 p,
+.box_02 p {
+	font-weight: 400;
+	font-size: 17px;
+	text-align: center;
+}
+
+.box_01 {
+	background: #FAD829;
+}
+
+.map {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 730px;
+	width: 100%;
+}
+
+.box_02 {
+	background: linear-gradient(90deg, #FAD829 0%, #F190AA 100%);
+}
+
+.box_03 {
+	background: linear-gradient(90deg, #F190AA 0%, #707BB8 100%);
+}
+
+.box_04 {
+	background: linear-gradient(90deg, #707BB8 0%, #63A7D8 100%);
+}
+
+.social h2 {
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--white);
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 70px;
+}
+
+.social .col-lg-10 {
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.instagram {
+	background: #FFFFFF;
+	border: 10px solid #F190AA;
+	border-radius: 20px;
+	width: 140px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 47.5px;
+}
+
+.facebook {
+	margin-left: 47.5px;
+	margin-right: 47.5px;
+	border: 10px solid #FAD829;
+	border-radius: 20px;
+	background: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 140px;
+	height: 100px;
+}
+
+.youtube {
+	margin-left: 47.5px;
+	background: #FFFFFF;
+	border: 7px solid #63A7D8;
+	border-radius: 20px;
+	width: 200px;
+	height: 100px;
+	background: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
 /* Media */
 
 @media (max-width: 1769px) {
@@ -3282,9 +3610,11 @@ input[type="submit"]:hover {
 		background-position: center top, 100% 44%, 100% 100%;
 		background-size: 100%, 50% 431px, 100% 80%;
 	}
+
 	.gift_box img:first-child {
 		max-width: 375px;
 	}
+
 	.contact__icons {
 		padding: 0 0 40px;
 	}
@@ -3336,6 +3666,7 @@ input[type="submit"]:hover {
 	.gift_img {
 		display: none;
 	}
+
 	.main_menu {
 		gap: 20px;
 	}
@@ -3346,88 +3677,115 @@ input[type="submit"]:hover {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.gift_box img:first-child, .gift_box img:last-child {
+
+	.gift_box img:first-child,
+	.gift_box img:last-child {
 		display: none;
 	}
+
 	.item_info__box h3 {
 		text-align: center;
 	}
+
 	.item_info__box:after {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
 	.shop_item_box .price {
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
 	}
-	.shop_item_box .btn{
+
+	.shop_item_box .btn {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
 	.shop_section_02 .shop_row2 .shop_item_box .row {
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: center;
 	}
+
 	.shop_section_03 {
 		background-size: 100%, cover;
 	}
+
 	.shop_section_01 h1 {
 		background-size: 100%;
 	}
+
 	.shop_section_01 {
 		background-size: cover;
 	}
+
 	.by_btn {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
 	.shop_section_02 .col-lg-10 {
 		background-size: cover;
 	}
+
 	.shop_section_02 .col-lg-10 p {
 		text-align: center;
 	}
-	.shop_section_02 .num, .info_row {
+
+	.shop_section_02 .num,
+	.info_row {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.shop_section_02 .shop_row2 h2, .shop_section_02 .shop_row2 p {
+
+	.shop_section_02 .shop_row2 h2,
+	.shop_section_02 .shop_row2 p {
 		text-align: center;
 	}
+
 	.shop_section_02 {
 		padding-top: 50px;
 	}
+
 	.shop_section_02 p {
 		margin-bottom: 50px;
 	}
+
 	.item_info p {
 		margin-bottom: 20px !important;
 	}
+
 	.arrow {
 		display: none;
 	}
+
 	.shop_section_02 {
 		background-position: 100% 200px, 100% 44%, 100% 100%;
 		background-size: cover, 0, cover;
 		padding-top: 150px;
 	}
+
 	.shop_section_02 .col-lg-10 img {
 		margin-top: 50px;
 	}
+
 	.shop_section_01 img {
 		max-width: 30%;
 		width: 100%;
 	}
+
 	.cookies_modal {
 		overflow: auto;
 		padding-bottom: 100px;
 	}
+
 	.cookies_modal h2 {
 		margin-top: 250px;
 		margin-bottom: 30px;
 	}
+
 	.cookies_modal .btn {
 		height: 47px;
 		width: 215px;
@@ -3436,6 +3794,7 @@ input[type="submit"]:hover {
 		border-radius: 0;
 		position: unset;
 	}
+
 	.cookies_modal {
 		background-size: 150% 150%;
 	}
@@ -3785,6 +4144,7 @@ input[type="submit"]:hover {
 		font-size: 80px;
 	}
 }
+
 @media (max-width: 540px) {
 	.shop_section_01 img {
 		display: none;
